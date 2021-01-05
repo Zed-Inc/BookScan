@@ -14,6 +14,9 @@ import SwiftUI
 // https://developers.google.com/books/docs/v1/getting_started
 // the google one has the review feature which is what we need
 
+// setting up environmnet variables
+//https://medium.com/flawless-app-stories/environment-variables-in-xcode-a78e07d223eds
+
 struct ContentView: View {
     @State private var showCaptureImageView: Bool = false
     @State private var image: Image?

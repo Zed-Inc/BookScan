@@ -23,7 +23,7 @@ class NetworkManager {
     }
     
 //    https://cloud.google.com/vision/docs/ocr
-    func parseImage(image: Data) -> ImageData {
+    func parseImage(image: Data, completion: (ImageData) -> Void) {
         let encoded = image.base64EncodedData()
         print("Encoded image data -> \(encoded)")
         

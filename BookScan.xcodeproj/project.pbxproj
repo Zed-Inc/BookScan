@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,8 @@
 		9540DBCA25A413EA0025322F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9540DBC925A413EA0025322F /* Coordinator.swift */; };
 		9540DBD025A41B820025322F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9540DBCF25A41B820025322F /* Network.swift */; };
 		9540DBDD25A41F520025322F /* keys.env in Resources */ = {isa = PBXBuildFile; fileRef = 9540DBDC25A41F520025322F /* keys.env */; };
+		9540DBE625A422A90025322F /* mainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9540DBE525A422A90025322F /* mainController.swift */; };
+		9540DBEF25A425E60025322F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9540DBEE25A425E60025322F /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,7 @@
 		9540DBC925A413EA0025322F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		9540DBCF25A41B820025322F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		9540DBDC25A41F520025322F /* keys.env */ = {isa = PBXFileReference; lastKnownFileType = text; path = keys.env; sourceTree = "<group>"; };
+		9540DBE525A422A90025322F /* mainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9540DBEF25A425E60025322F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +110,7 @@
 				9540DB9625A3F93C0025322F /* BookScanApp.swift */,
 				9540DBDC25A41F520025322F /* keys.env */,
 				9540DB9825A3F93C0025322F /* ContentView.swift */,
+				9540DBE425A422960025322F /* controller */,
 				9540DBCE25A41B730025322F /* managers */,
 				9540DBC425A4135D0025322F /* Camera.swift */,
 				9540DBC925A413EA0025322F /* Coordinator.swift */,
@@ -150,6 +155,14 @@
 			path = managers;
 			sourceTree = "<group>";
 		};
+		9540DBE425A422960025322F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				9540DBE525A422A90025322F /* mainController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,6 +179,9 @@
 			dependencies = (
 			);
 			name = BookScan;
+			packageProductDependencies = (
+				9540DBEE25A425E60025322F /* Alamofire */,
+			);
 			productName = BookScan;
 			productReference = 9540DB9325A3F93C0025322F /* BookScan.app */;
 			productType = "com.apple.product-type.application";
@@ -237,6 +253,9 @@
 				Base,
 			);
 			mainGroup = 9540DB8A25A3F93C0025322F;
+			packageReferences = (
+				9540DBED25A425E60025322F /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 9540DB9425A3F93C0025322F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -280,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9540DBE625A422A90025322F /* mainController.swift in Sources */,
 				9540DBD025A41B820025322F /* Network.swift in Sources */,
 				9540DBCA25A413EA0025322F /* Coordinator.swift in Sources */,
 				9540DB9925A3F93C0025322F /* ContentView.swift in Sources */,
@@ -604,6 +624,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9540DBED25A425E60025322F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9540DBEE25A425E60025322F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9540DBED25A425E60025322F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9540DB8B25A3F93C0025322F /* Project object */;
 }
