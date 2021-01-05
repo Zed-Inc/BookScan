@@ -13,6 +13,10 @@
 		9540DB9E25A3F9470025322F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9540DB9D25A3F9470025322F /* Preview Assets.xcassets */; };
 		9540DBA925A3F9470025322F /* BookScanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9540DBA825A3F9470025322F /* BookScanTests.swift */; };
 		9540DBB425A3F9470025322F /* BookScanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9540DBB325A3F9470025322F /* BookScanUITests.swift */; };
+		9540DBC525A4135D0025322F /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9540DBC425A4135D0025322F /* Camera.swift */; };
+		9540DBCA25A413EA0025322F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9540DBC925A413EA0025322F /* Coordinator.swift */; };
+		9540DBD025A41B820025322F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9540DBCF25A41B820025322F /* Network.swift */; };
+		9540DBDD25A41F520025322F /* keys.env in Resources */ = {isa = PBXBuildFile; fileRef = 9540DBDC25A41F520025322F /* keys.env */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		9540DBAF25A3F9470025322F /* BookScanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookScanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9540DBB325A3F9470025322F /* BookScanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookScanUITests.swift; sourceTree = "<group>"; };
 		9540DBB525A3F9470025322F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9540DBC425A4135D0025322F /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		9540DBC925A413EA0025322F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		9540DBCF25A41B820025322F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		9540DBDC25A41F520025322F /* keys.env */ = {isa = PBXFileReference; lastKnownFileType = text; path = keys.env; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				9540DB9625A3F93C0025322F /* BookScanApp.swift */,
+				9540DBDC25A41F520025322F /* keys.env */,
 				9540DB9825A3F93C0025322F /* ContentView.swift */,
+				9540DBCE25A41B730025322F /* managers */,
+				9540DBC425A4135D0025322F /* Camera.swift */,
+				9540DBC925A413EA0025322F /* Coordinator.swift */,
 				9540DB9A25A3F9470025322F /* Assets.xcassets */,
 				9540DB9F25A3F9470025322F /* Info.plist */,
 				9540DB9C25A3F9470025322F /* Preview Content */,
@@ -128,6 +140,14 @@
 				9540DBB525A3F9470025322F /* Info.plist */,
 			);
 			path = BookScanUITests;
+			sourceTree = "<group>";
+		};
+		9540DBCE25A41B730025322F /* managers */ = {
+			isa = PBXGroup;
+			children = (
+				9540DBCF25A41B820025322F /* Network.swift */,
+			);
+			path = managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9540DB9E25A3F9470025322F /* Preview Assets.xcassets in Resources */,
+				9540DBDD25A41F520025322F /* keys.env in Resources */,
 				9540DB9B25A3F9470025322F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9540DBD025A41B820025322F /* Network.swift in Sources */,
+				9540DBCA25A413EA0025322F /* Coordinator.swift in Sources */,
 				9540DB9925A3F93C0025322F /* ContentView.swift in Sources */,
 				9540DB9725A3F93C0025322F /* BookScanApp.swift in Sources */,
+				9540DBC525A4135D0025322F /* Camera.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
