@@ -8,9 +8,11 @@
 import Foundation
 
 
-struct ImageData {
-    
-}
+import Alamofire
+
+
+
+
 
 class NetworkManager {
     static var network = NetworkManager()
@@ -23,6 +25,11 @@ class NetworkManager {
     }
     
 //    https://cloud.google.com/vision/docs/ocr
+    ///This function will connect with google cloud and return any written text in the image
+    /*
+     Scan the isbn of the book and return information that way??
+     https://www.iowncode.com/ios-text-recognition-using-vision-and-core-ml/
+     */
     func parseImage(image: Data, completion: (ImageData) -> Void) {
         let encoded = image.base64EncodedData()
         print("Encoded image data -> \(encoded)")
@@ -40,13 +47,27 @@ class NetworkManager {
                 ]
             ]
          ]
-        
-        
-        
-        
+        print("json \(json)")
     }
     
     
+    /*
+     I think we might have to skip the text recognition for the a3 prototype
+     i dont have enough time for figuring out the image classifier
+     
+     or we shift and scan for the isbn of the book
+     because of font/cover image problems
+     
+     https://www.labnol.org/code/20020-query-book-by-isbn
+     */
+    
+    func getReviews(isbn: String, completion: (ReviewList) -> Void) {
+        let url = "https://www.googleapis.com/books/v1/volumes?q=isbn:\(isbn)"
+        AF.request(url).response { resp in
+            
+            
+        }
+    }
     
     
     
