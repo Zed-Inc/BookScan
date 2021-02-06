@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
-    @Binding var menuSelected: Bool = false
+    @Binding var menuSelected: Bool
     
     @State private var searchSelected: Bool = false
     
@@ -70,9 +70,11 @@ struct MainView: View {
                 .overlay(
                     HStack {
                         Button(action: {
-                            self.menuSelected.toggle()
+                            withAnimation {
+                                self.menuSelected.toggle()
+                            }
                         }, label: {
-                            Image(systemName: "text.justify")
+                            Image(systemName: "line.horizontal.3")
                                 .foregroundColor(.orange)
                         })
                         Spacer()
@@ -103,11 +105,12 @@ struct MainView: View {
                         
 //                        Spacer()
                     }.padding()
-                    .frame(width: screenWidth)
+//                    .frame(width: screenWidth)
                     
                     
                     
-                }.frame(width: screenWidth, height: screenHeight*0.7)
+                }
+//                .frame(width: screenWidth, height: screenHeight*0.7)
                 
                 Spacer()
                 
@@ -172,7 +175,8 @@ struct MainView: View {
                 
                 Spacer()
             }
-        }.ignoresSafeArea(.all)
+        }
+        .edgesIgnoringSafeArea(.all)
 
         
         
@@ -184,7 +188,8 @@ struct MainView: View {
 }
 
 struct MainView_Previews: PreviewProvider {
+    @State static var l = false
     static var previews: some View {
-        MainView()
+        MainView(menuSelected: $l)
     }
 }
