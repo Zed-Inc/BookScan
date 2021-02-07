@@ -67,7 +67,6 @@
 		9540DBDC25A41F520025322F /* keys.env */ = {isa = PBXFileReference; lastKnownFileType = text; path = keys.env; sourceTree = "<group>"; };
 		9540DBE525A422A90025322F /* mainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainController.swift; sourceTree = "<group>"; };
 		9560E97125CCF5DF00F22B04 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
-		9560E99925CD086F00F22B04 /* Fox 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fox 8.jpg"; sourceTree = "<group>"; };
 		9560E9A025CD74D200F22B04 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		9560E9A825CD759F00F22B04 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		95791BD725CE6A96000062C0 /* SideMenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuBar.swift; sourceTree = "<group>"; };
@@ -139,7 +138,6 @@
 				9540DBC425A4135D0025322F /* Camera.swift */,
 				9540DBC925A413EA0025322F /* Coordinator.swift */,
 				9540DB9A25A3F9470025322F /* Assets.xcassets */,
-				9560E99925CD086F00F22B04 /* Fox 8.jpg */,
 				9540DB9F25A3F9470025322F /* Info.plist */,
 				9540DB9C25A3F9470025322F /* Preview Content */,
 			);
