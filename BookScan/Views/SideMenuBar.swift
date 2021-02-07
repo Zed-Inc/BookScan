@@ -15,27 +15,66 @@ struct SideMenuBar: View {
     var body: some View {
         VStack(alignment:.leading) {
             
-            HStack {
-                Image(systemName: "arrow.right")
-                    .foregroundColor(.gray)
-                    .imageScale(.large)
-                    .onTapGesture {
-                        withAnimation {
-                            self.showMenu = false
-                        }
-                    }
-            }.padding(.top, 100)
+            Button(action: {
+                print("")
+            }, label: {
+                HStack {
+                    Image(systemName: "bookmark")
+                        .foregroundColor(.gray)
+                        .imageScale(.large)
+                    Text("Wishlist")
+                        .foregroundColor(.gray)
+                        .font(.headline)
+                }
+            }).padding(.top, 100)
+            
+            Button(action: {
+                print("settings")
+            }, label: {
+                HStack {
+                    Image(systemName: "gearshape")
+                        .foregroundColor(.gray)
+                        .imageScale(.large)
+                    Text("Settings")
+                        .foregroundColor(.gray)
+                        .font(.headline)
+                }
+            }).padding(.top, 30)
             
             
-            HStack {
-                Image(systemName: "magnifyingglass")
-                    .foregroundColor(.gray)
-                    .imageScale(.large)
-                Text("search")
-                    .foregroundColor(.gray)
-                    .font(.headline)
-            }.padding(.top, 30)
-            // put other items in here
+            Button(action: {
+                print("about")
+            }, label: {
+                HStack {
+                    Image(systemName: "info.circle")
+                        .foregroundColor(.gray)
+                        .imageScale(.large)
+                    Text("About")
+                        .font(.headline)
+                        .foregroundColor(Color.gray)
+                        
+                }
+            }).padding(.top, 30)
+            
+            
+            
+            
+            Button(action: {
+                print("delete")
+            }, label: {
+                HStack {
+                    Image(systemName: "trash")
+                        .foregroundColor(.gray)
+                        .imageScale(.medium)
+                    Text("Clear recently scanned")
+                        .font(.body)
+                        .foregroundColor(Color.gray)
+                        
+                }
+            }).padding(.top, 70)
+            
+           
+            
             Spacer()
         }
         .padding()

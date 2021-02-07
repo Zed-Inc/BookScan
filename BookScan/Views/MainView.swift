@@ -75,6 +75,7 @@ struct MainView: View {
                             }
                         }, label: {
                             Image(systemName: "line.horizontal.3")
+                                .imageScale(.large)
                                 .foregroundColor(.orange)
                         })
                         Spacer()
@@ -103,19 +104,15 @@ struct MainView: View {
                           Divider()
                         BookGrid()
                         
-//                        Spacer()
+
                     }.padding()
-//                    .frame(width: screenWidth)
-                    
-                    
-                    
                 }
-//                .frame(width: screenWidth, height: screenHeight*0.7)
                 
                 Spacer()
                 
                 HStack(spacing: 60) {
                     Spacer()
+                    //MARK: Search
                     Button(action: {
                         print("search for a book")
                         self.searchSelected.toggle()
@@ -136,7 +133,7 @@ struct MainView: View {
                         SearchView()
                     })
                     
-                    
+                    //MARK: Scan
                     Button(action: {
                         print("capture image")
                     }, label: {
@@ -153,6 +150,7 @@ struct MainView: View {
                         }.frame(width: 50, height: 60)
                     })
                     
+                    //MARK: Quiz
                     Button(action: {
                         print("do quiz")
                     }, label: {
