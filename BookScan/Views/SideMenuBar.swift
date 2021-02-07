@@ -67,7 +67,7 @@ struct SideMenuBar: View {
                         .foregroundColor(.gray)
                         .imageScale(.medium)
                     Text("Clear recently scanned")
-                        .font(.body)
+                        .font(.footnote)
                         .foregroundColor(Color.gray)
                         
                 }

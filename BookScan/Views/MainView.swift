@@ -11,7 +11,7 @@ struct MainView: View {
     @Binding var menuSelected: Bool
     
     @State private var searchSelected: Bool = false
-    
+    @State private var quizSelected: Bool = false
     
     private let rencentlyScannedBooks = GenerateBooks()
     
@@ -153,6 +153,7 @@ struct MainView: View {
                     //MARK: Quiz
                     Button(action: {
                         print("do quiz")
+                        self.quizSelected.toggle()
                     }, label: {
                         VStack {
                            Image(systemName: "text.book.closed")
@@ -166,6 +167,8 @@ struct MainView: View {
                                 .fontWeight(.bold)
                                 .foregroundColor(.white)
                         }
+                    }).sheet(isPresented: $quizSelected, content: {
+                        QuizView()
                     })
                     
                     Spacer()

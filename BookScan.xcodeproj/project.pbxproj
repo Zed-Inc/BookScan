@@ -26,6 +26,8 @@
 		95791BD825CE6A96000062C0 /* SideMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95791BD725CE6A96000062C0 /* SideMenuBar.swift */; };
 		95791BE025CE6AA4000062C0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95791BDF25CE6AA4000062C0 /* MainView.swift */; };
 		95791BE525CE6AF2000062C0 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95791BE425CE6AF2000062C0 /* extensions.swift */; };
+		95791BF025CFF7E6000062C0 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95791BEF25CFF7E6000062C0 /* QuizView.swift */; };
+		95791BF525CFF9C1000062C0 /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95791BF425CFF9C1000062C0 /* QuizModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		95791BD725CE6A96000062C0 /* SideMenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuBar.swift; sourceTree = "<group>"; };
 		95791BDF25CE6AA4000062C0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		95791BE425CE6AF2000062C0 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		95791BEF25CFF7E6000062C0 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		95791BF425CFF9C1000062C0 /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 				9540DB9825A3F93C0025322F /* ContentView.swift */,
 				95791BD625CE6A80000062C0 /* Views */,
 				9560E9A825CD759F00F22B04 /* Constants.swift */,
+				95791BF425CFF9C1000062C0 /* QuizModel.swift */,
 				9560E97125CCF5DF00F22B04 /* BookModel.swift */,
 				9540DBE425A422960025322F /* controller */,
 				9540DBCE25A41B730025322F /* managers */,
@@ -189,6 +194,7 @@
 			children = (
 				95791BD725CE6A96000062C0 /* SideMenuBar.swift */,
 				95791BDF25CE6AA4000062C0 /* MainView.swift */,
+				95791BEF25CFF7E6000062C0 /* QuizView.swift */,
 				9560E9A025CD74D200F22B04 /* SearchView.swift */,
 			);
 			path = Views;
@@ -334,6 +340,7 @@
 				95791BE025CE6AA4000062C0 /* MainView.swift in Sources */,
 				9560E9A125CD74D200F22B04 /* SearchView.swift in Sources */,
 				9540DBE625A422A90025322F /* mainController.swift in Sources */,
+				95791BF525CFF9C1000062C0 /* QuizModel.swift in Sources */,
 				9540DBD025A41B820025322F /* Network.swift in Sources */,
 				9540DBCA25A413EA0025322F /* Coordinator.swift in Sources */,
 				9560E9A925CD759F00F22B04 /* Constants.swift in Sources */,
@@ -341,6 +348,7 @@
 				95791BD825CE6A96000062C0 /* SideMenuBar.swift in Sources */,
 				9540DB9925A3F93C0025322F /* ContentView.swift in Sources */,
 				9540DB9725A3F93C0025322F /* BookScanApp.swift in Sources */,
+				95791BF025CFF7E6000062C0 /* QuizView.swift in Sources */,
 				9560E97225CCF5DF00F22B04 /* BookModel.swift in Sources */,
 				9540DBC525A4135D0025322F /* Camera.swift in Sources */,
 			);
