@@ -55,7 +55,7 @@ struct MainView: View {
             
             
             VStack(spacing: 10) {
-                Spacer().frame(height: screenHeight * 0.04, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                Spacer().frame(height: screenHeight * 0.04, alignment: .center)
                 //MARK: the menu icon and app name
                 HStack {
                     Spacer()
@@ -103,8 +103,6 @@ struct MainView: View {
                         }.padding(.leading, 10)
                           Divider()
                         BookGrid()
-                        
-
                     }.padding()
                 }
                 
